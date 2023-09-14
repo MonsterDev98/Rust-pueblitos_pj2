@@ -1,5 +1,5 @@
 fn main() {
-    let height: i16 = 1540;
+    let height: i16 = 43;
 
     townelection(height);
 }
@@ -23,12 +23,12 @@ fn townelection (option: i16) -> u8 {
 
     if option >= 500 && option <= 1000{
         println!("Los lugares que tienen esta altura son Norcasia: {}msnm\n La Virginia: {}msnm ", h_norcasia , h_lavirginia);
-    }
-    if option >= 1000 && option <= 1500{
+    } else if option >= 1000 && option <= 1500{
         println!("Los lugares que tienen esta altura son Chinchiná: {}msnm\n Quimbaya: {}msnm", h_chinchina, h_quimbaya);
-    }
-    if option >= 1500 && option <= 2000 {
+    } else if option >= 1500 && option <= 2000 {
         println!("Los lugares que tienen esta altura son Santuario : {}msnm\n Santa Rosa: {}msnm\n Riosucio: {}msnm\n Salento: {}msnm\n Filandia: {}msnm", h_santuario, h_santa_rosa, h_riosucio,h_salento,h_filandia);
+    } else {
+        print!("ERROR! Ingrese una altura entre 500 y 2000 msnm\n");
     }
     return 1;    
 
